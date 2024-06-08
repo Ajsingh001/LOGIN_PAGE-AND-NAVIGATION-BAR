@@ -1,0 +1,313 @@
+*,
+::before,
+::after {
+
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 0%;
+    padding: 0%;
+}
+
+.body {
+    margin: auto;
+    padding: 0px;
+}
+
+.dropdown2 ul {
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url(/img/obi-pixel7propix-KW0rZJojScM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+.dropdown2>ul>li:nth-child(2) {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.drop1::after {
+    content: "";
+    display: inline-block;
+    border: 6px solid black;
+    border-color: transparent transparent transparent black;
+    margin: 5px 6px;
+    width: 10px;
+    height: 10px;
+
+}
+.drop1{
+    position: relative;
+}
+
+.dropdown3{
+    display: none;
+    background-color: red;
+    margin-right: 100px;
+
+}
+.dropdown2>ul>li:hover{
+    display: ;
+}
+
+
+@font-face {
+    font-family: chelsa;
+    src: url(/fonts/chelsea/ChelseaMarket-Regular.woff);
+    font: 400;
+}
+
+.chelsa {
+    font-family: chelsa;
+    display: swap;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    background-color: aliceblue;
+    background-color: rgba(253, 275, 562, 0.3);
+    height: 100vh;
+}
+
+.drop {
+    position: relative;
+}
+
+
+.dropdown2 {
+    display: none;
+    position: absolute;
+    text-align: left;
+    z-index:0;
+    background-image: url(/img/obi-pixel7propix-KW0rZJojScM-unsplash.jpg);
+    background-size: auto;
+    border-radius: 4px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 7px 0px;
+    margin-top: 5px;
+    margin-left: -6px;
+    border-top-left-radius:0px ;
+    border-top-right-radius:0px;
+}
+
+.dropdown2 ul li {
+    padding: 3px;
+    transition: ease 0.2s all;
+
+
+
+}
+
+ul li:hover {
+    background-color: rgba(8, 245, 245, 0.8);
+}
+
+ul li:hover a {
+    color: rgb(250, 38, 0);
+
+}
+
+.dropdown1 ul li {
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: ease 0.2s all;
+}
+
+
+.dropdown1 ul li:hover .dropdown2 {
+    display: block;
+}
+
+.dropdown1 {
+    width: 30%;
+}
+
+.dropdown1>ul>li {
+    /* border-radius: 4px; */
+    box-shadow: 0px 0px 7px 0.9px;
+}
+
+.head {
+    /* background-color: #82caff; */
+    background-image: url(/img/obi-pixel7propix-KW0rZJojScM-unsplash.jpg);
+    padding: 5px;
+    background-repeat: no-repeat;
+}
+
+.dropdown1>ul>li {
+    margin-right: 5px;
+    padding: 5px 5px;
+}
+
+.drop::after {
+    content: "";
+    display: inline-block;
+    border: 7px solid black;
+    border-color: black transparent transparent transparent;
+    margin: -6px -3px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+}
+
+.justify1 {
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+
+}
+
+
+.titleh2 {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0px 30px 0px;
+
+}
+
+
+.user-input {
+    margin: 10px 0px 10px 0px;
+}
+
+.user-input input {
+    width: 100%;
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+input:valid {
+    border: 2px solid green;
+    transition: ease 0.5s all;
+}
+
+.input-box:focus {
+    background-color: rgb(163, 171, 171);
+}
+
+.input-box:hover {
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.ver {
+    vertical-align: middle;
+}
+
+.ali {
+    align-items: center;
+}
+
+.cat {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.cat1 {
+    margin: 5px 0px 5px 0px;
+}
+
+.genlab {
+    font-weight: 700;
+}
+
+#other:valid {
+    background-color: aquamarine;
+    color: aqua;
+
+}
+
+.check input:active {
+    color: rgb(234, 106, 8);
+    background-color: red;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 5px 0px;
+}
+
+.login button {
+    width: 150px;
+    box-shadow: 0px 0px 3px 0.5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: aqua;
+    transition: ease 0.3s all;
+}
+
+.forget {
+
+    font-size: 13px;
+    margin: 14px 0px 10px 0px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(233, 238, 247);
+    font-weight: 500;
+}
+
+
+a:checked {
+    color: yellow;
+}
+
+a:active {
+    color: black;
+
+}

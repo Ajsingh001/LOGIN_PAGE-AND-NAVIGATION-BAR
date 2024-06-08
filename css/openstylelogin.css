@@ -1,0 +1,270 @@
+*,
+::before,
+::after {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(54, 132, 201, 0.7);
+    height: 100vh;
+    
+}
+
+.body {
+    margin: auto;
+    padding: 0px;
+}
+
+.main{
+    margin-right: 100px;
+
+}
+
+.justify1 {
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+
+}
+
+
+.titleh2 {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0px 30px 0px;
+
+}
+
+
+.user-input {
+    margin: 10px 0px 10px 0px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-input input {
+    width: 100%;
+    text-align: center;
+    padding: 2px 5px 2px 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+input:valid {
+    border: 2px solid green;
+    transition: ease 0.5s all;
+}
+
+.input-box:focus {
+    background-color: rgb(59, 230, 184);
+}
+
+.input-box:hover {
+    background-color: rgba(38, 203, 245, 0.7);
+}
+
+.flex {
+    display: flex;
+
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.ver {
+    vertical-align: middle;
+}
+
+.ali {
+    align-items: center;
+}
+
+input[type="search"] {
+    /* border: none; */
+    /* background: transparent; */
+    margin: 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+input[type="search"]::placeholder {
+    color: #1b61e3;
+}
+
+button {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+button:hover {
+    background-color: #08e37d;
+    transition: 0.5s;
+}
+
+.center {
+    position: relative;
+    background-color: transparent;
+    padding: 10px 13px;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+    bottom: 50px;
+    right: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    /* animation-name: moveto;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+    
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; */
+
+}
+
+/* @keyframes moveto {
+    form {
+        top: 0px;
+        left: 0px;
+        background-color: #1b61e3;
+    }
+
+    to {
+        top: 0px;
+        right: 100px;
+        background-color: #08e37d;
+    }
+} */
+
+.checkkr {
+    width: 28.5px;
+    height: 33px;
+    opacity: 0;
+}
+
+.user-input {
+    margin: 0%;
+    padding: 0%;
+    transition: 0.5s;
+    width: 0;
+    overflow: hidden;
+}
+
+.center input:checked~.user-input {
+    margin-left: 5px;
+    transition: 0.5s ease-in-out 0.2s all;
+    width: 350px;
+
+}
+
+
+.center input:checked~.fir {
+    display: block;
+}
+
+.center input:checked~.sec {
+    display: block;
+}
+
+.sear {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    color: #ef5e25;
+    border-radius: 50px;
+    pointer-events: none;
+    transition: 0.5s;
+    font-weight: 800;
+
+}
+
+.center input:checked~.sear {
+    display: none;
+    position: absolute;
+
+}
+
+.center:hover {
+    background-color: rgb(8, 227, 125);
+}
+
+button {
+    border: none;
+    color: none;
+}
+
+.sec,
+.fir {
+    display: none;
+    position: absolute;
+    left: 14px;
+    width: 20px;
+    height:3px;
+    background-color: rgb(250, 17, 17);
+    border-radius: 50px;
+    /* border: 2px solid red; */
+    pointer-events: none;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+
+}
+
+/* .center input:checked~.sear{
+    display: none;
+} */
+
+
+/* .center input:checked>span:nth-child(3),
+span:nth-child(4):hover {
+    background-color: rgb(76, 0, 255);
+} */
+
+
+.center input:checked .fir {
+    position: absolute;
+    left: 6px;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(223, 15, 29);
+    color: #ef5e25;
+    border-radius: 50px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.fir {
+    transform: translateY(-4px);
+}
+
+input:checked~.sec {
+    transform: translateY(0) rotate(-45deg);
+}
+
+input:checked~.fir {
+    transform: translateY(0) rotate(45deg);
+}
+
+.sec {
+    transform: translateY(4px);
+}
